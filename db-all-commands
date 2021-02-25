@@ -1,0 +1,18 @@
+python
+    from app import db
+    from app.models import POst
+    
+    user = Post.query.all()
+    user = Post.query.get(1)
+    user = Post(title='me',content='this it it')
+    db.session.add(user)
+    db.session.commit()
+    
+
+
+
+
+
+ 
+    db.session.query(Post).delete()
+    db.session.commit()

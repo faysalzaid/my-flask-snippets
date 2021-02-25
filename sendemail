@@ -1,0 +1,6 @@
+   import smtplib
+    message ='Thank you for  your subscription to our newsletter ZaidAcademy'
+    server = smtplib.SMTP("smtp.gmail.com",587)
+    server.starttls()
+    server.login("zaidnajim111@gmail.com","faysalalihussein")
+    server.sendmail("zaidnajim111@gmail.com",email,message) 
