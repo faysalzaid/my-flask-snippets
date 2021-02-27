@@ -12,7 +12,14 @@ python
 
 
 
-
- 
+    
+    # DELETE TABLE IN SQLALCHEMY/SQLITE3
     db.session.query(Post).delete()
+    db.session.commit()
+
+    
+    #DELETE SINGLE RECODR IN THE SQLALCHEMY/SQLITE3
+    
+    d = Post.query.filter_by(id=1).delete()
+    db.session.execute(d)
     db.session.commit()
